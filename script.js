@@ -11,7 +11,7 @@ var generateBtn = document.querySelector("#generate");
 //   var numbers = confirm("Would you like to use numbers?");
 //   var symbols = confirm("Would you like to use special characters?");
 //   }
-
+// notes 
 
 
 // Write password to the #password input
