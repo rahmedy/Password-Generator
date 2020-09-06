@@ -6,4 +6,7 @@ After the data is inputed it will genertate a raddome password with the characte
 This is all happeing once the user clicks the button which then calls on the function to do the rest
 
 
+# Link to working application: http://127.0.0.1:5500/index.html
+
+
 ![](demo.png)
