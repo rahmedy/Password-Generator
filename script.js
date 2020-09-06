@@ -32,11 +32,14 @@ function createPassword() {
         alert("Length must be between 8 and 128 characters");
         return;
     }
+};
+
+// createPassword ();
     var lowers = confirm("Would you like to use lowercase letters?");
     var uppers = confirm("Would you like to use Uppercase letters?");
     var numbers = confirm("Would you like to use numbers?");
     var symbols = confirm("Would you like to use special characters?");
-}
+
 if (uppers != true && lowers != true && numbers != true && symbols != true) {
 
     alert("Please select at least on of the following character types");
@@ -49,39 +52,40 @@ var userInput = {
     symbols: symbols,
 }
 return userInput;
-          }
-function randomNumber(arr) {
-    var randomIndex = Math.floor(Math.random() * arr.length);
-    var randomElement = arr[randomIndex]
-    return randomElement;
-}
-randomNumber(charL);
+          
+// function randomNumber(arr) {
+//     var randomIndex = Math.floor(Math.random() * arr.length);
+//     var randomElement = arr[randomIndex]
+//     return randomElement;
+// }
+// randomNumber(charL);
 
 
-createPassword()
+// createPassword()
 
-function generatePassword() {
-    var pass = '';
-    var strng = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$" + "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
-    //   created a for loop to ensure when button is clicked, it generates a new password.
-    for (i = 1; i <= 20; i++) {
-        var char = Math.floor(Math.random() * strng.length + 1);
+// function generatePassword() {
+//     var pass = '';
+//     var strng = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$" + "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
+//     //   created a for loop to ensure when button is clicked, it generates a new password.
+//     for (i = 1; i <= 20; i++) {
+//         var char = Math.floor(Math.random() * strng.length + 1);
 
-        pass += strng.charAt(char)
-    }
+//         pass += strng.charAt(char)
+//     }
 
-    return pass + "";
-};
-var generateBtn = document.querySelector("#generate");
+//     return pass + "";
+// };
+// var generateBtn = document.querySelector("#generate");
 
-function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+// function writePassword() {
+//     var password = generatePassword();
+//     var passwordText = document.querySelector("#password");
 
-    passwordText.value = password;
+//     passwordText.value = password;
 
-}
-generateBtn.addEventListener("click", writePassword);
+// }
+
+// generateBtn.addEventListener("click");
 
 //     }
 //     else if (lowers && uppers && numbers && symbols) {
